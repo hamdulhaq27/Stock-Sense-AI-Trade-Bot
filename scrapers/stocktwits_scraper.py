@@ -17,12 +17,26 @@ TARGET_STOCKS = {
     "GOOGL": ["Google", "Alphabet", "GOOGL", "Sundar Pichai"],
     "META":  ["Meta", "Facebook", "META", "Zuckerberg"],
     "JPM":   ["JPMorgan", "JPM", "Jamie Dimon"],
+    "GS":    ["Goldman Sachs", "GS", "Goldman"],
+    "BAC":   ["Bank of America", "BAC"],
     "NFLX":  ["Netflix", "NFLX", "streaming"],
-    "AMD":   ["AMD", "Advanced Micro Devices", "Lisa Su"],
-    "UBER":  ["Uber", "UBER", "rideshare"],
     "DIS":   ["Disney", "DIS", "Walt Disney"],
+    "UBER":  ["Uber", "UBER", "rideshare"],
+    "SPOT":  ["Spotify", "SPOT", "podcast"],
+    "AMD":   ["AMD", "Advanced Micro Devices", "Lisa Su"],
+    "INTC":  ["Intel", "INTC", "Pat Gelsinger"],
+    "QCOM":  ["Qualcomm", "QCOM", "snapdragon"],
+    "PYPL":  ["PayPal", "PYPL"],
+    "SQ":    ["Block", "Square", "SQ", "Jack Dorsey"],
+    "SHOP":  ["Shopify", "SHOP"],
+    "JNJ":   ["Johnson Johnson", "JNJ"],
+    "PFE":   ["Pfizer", "PFE"],
+    "XOM":   ["ExxonMobil", "Exxon", "XOM"],
+    "CVX":   ["Chevron", "CVX"],
+    "RIVN":  ["Rivian", "RIVN"],
+    "PLTR":  ["Palantir", "PLTR", "Alex Karp"],
+    "WMT":   ["Walmart", "WMT"],
 }
-
 # StockTwits API endpoint
 BASE_URL = "https://api.stocktwits.com/api/2/streams/symbol/{symbol}.json"
 OUTPUT_FILE = f"stocktwits_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv"
