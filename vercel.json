@@ -1,0 +1,11 @@
+{
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/next"
+    }
+  ],
+  "env": {
+    "NEXT_PUBLIC_API_URL": "https://stocksense-api-ph83.onrender.com"
+  }
+}

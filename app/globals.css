@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+@theme {
+  /* ── Backgrounds ── */
+  --color-background: #FDFCF9;
+  --color-surface:    #FFFFFF;
+  --color-surface-2:  #F8F5F0;
+  --color-surface-3:  #EDE8DF;
+
+  /* ── Borders ── */
+  --color-border:       #E2D9CC;
+  --color-border-light: #EDE8E0;
+
+  /* ── Brand ── */
+  --color-primary:       #1A56DB;
+  --color-primary-light: #3B82F6;
+  --color-primary-dark:  #1340B0;
+  --color-primary-glow:  rgba(26,86,219,0.15);
+
+  /* ── Signals ── */
+  --color-bull:   #16A34A;
+  --color-bear:   #DC2626;
+  --color-neutral:#B45309;
+  --color-accent-green: #16A34A;
+  --color-accent:       #DC2626;
+  --color-accent-amber: #B45309;
+  --color-accent-green-light: #4ADE80;
+  --color-accent-light: #FC8181;
+  --color-accent-amber-light: #FCD34D;
+
+  /* ── Text ── */
+  --color-text-primary:   #1A1205;
+  --color-text-secondary: #5C4D3A;
+  --color-text-muted:     #9C8B78;
+  --color-text-inverse:   #FFFFFF;
+
+  /* ── Typography ── */
+  --font-sans: var(--font-outfit);
+  --font-mono: var(--font-jetbrains-mono);
+
+  /* ── Animations ── */
+  --animate-ticker: ticker 40s linear infinite;
+  --animate-float:  float 8s ease-in-out infinite;
+
+  @keyframes ticker {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50%       { transform: translateY(-14px); }
+  }
+  @keyframes fade-up {
+    from { opacity:0; transform:translateY(24px); }
+    to   { opacity:1; transform:translateY(0); }
+  }
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  background-color: var(--color-background);
+  color:            var(--color-text-primary);
+  font-family:      var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection { background: rgba(26,86,219,0.12); color: var(--color-primary); }
+
+/* Scrollbar */
+::-webkit-scrollbar       { width: 5px; }
+::-webkit-scrollbar-track { background: var(--color-surface-2); }
+::-webkit-scrollbar-thumb { background: var(--color-border); border-radius:4px; }

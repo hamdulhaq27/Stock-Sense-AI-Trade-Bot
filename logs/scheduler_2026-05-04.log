@@ -1,0 +1,162 @@
+2026-05-04 14:34:49 [INFO    ] [scheduler] Initializing APScheduler...
+2026-05-04 14:34:49 [INFO    ] [scheduler] APScheduler started. Pipeline scheduled daily at 16:00 US/Eastern
+2026-05-04 14:37:35 [INFO    ] [scheduler] Initializing APScheduler...
+2026-05-04 14:37:35 [INFO    ] [scheduler] APScheduler started. Pipeline scheduled daily at 16:00 US/Eastern
+2026-05-04 14:38:12 [INFO    ] [scheduler] Manual pipeline trigger requested
+2026-05-04 14:38:16 [INFO    ] [scheduler] ================================================================================
+2026-05-04 14:38:16 [INFO    ] [scheduler] Starting daily prediction pipeline at 2026-05-04 14:38:16
+2026-05-04 14:38:16 [INFO    ] [scheduler] ================================================================================
+2026-05-04 14:38:16 [INFO    ] [scheduler] [1/5] Initializing database...
+2026-05-04 14:38:16 [INFO    ] [scheduler] [2/5] Scraping new stock data...
+2026-05-04 14:38:16 [ERROR   ] [scheduler] Stock scraping failed: No module named 'scraping'
+2026-05-04 14:38:16 [INFO    ] [scheduler] [3/5] Loading data for prediction...
+2026-05-04 14:38:16 [INFO    ] [scheduler] Loaded 176029 stock records
+2026-05-04 14:38:16 [INFO    ] [scheduler] [4/5] Running ML inference...
+2026-05-04 14:38:16 [ERROR   ] [scheduler] Prediction phase failed: invalid load key, '\x02'.
+2026-05-04 14:38:16 [INFO    ] [scheduler] [5/5] Exporting backup...
+2026-05-04 14:38:16 [INFO    ] [scheduler] Exported predictions to C:\Users\PC\Desktop\website\backend\data\predictions_backup_2026-05-04.csv
+2026-05-04 14:38:16 [INFO    ] [scheduler] ================================================================================
+2026-05-04 14:38:16 [INFO    ] [scheduler] Pipeline SUCCESS in 0.1s
+  Stocks scraped: 0
+  Predictions made: 0
+  Predictions saved: 0
+  Errors: 2
+  Warnings: 0
+2026-05-04 14:38:16 [INFO    ] [scheduler] ================================================================================
+2026-05-04 14:39:49 [INFO    ] [scheduler] Initializing APScheduler...
+2026-05-04 14:39:49 [INFO    ] [scheduler] APScheduler started. Pipeline scheduled daily at 16:00 US/Eastern
+2026-05-04 14:39:52 [INFO    ] [scheduler] Manual pipeline trigger requested
+2026-05-04 14:39:52 [INFO    ] [scheduler] ================================================================================
+2026-05-04 14:39:52 [INFO    ] [scheduler] Starting daily prediction pipeline at 2026-05-04 14:39:52
+2026-05-04 14:39:52 [INFO    ] [scheduler] ================================================================================
+2026-05-04 14:39:52 [INFO    ] [scheduler] [1/5] Initializing database...
+2026-05-04 14:39:52 [INFO    ] [scheduler] [2/5] Scraping new stock data...
+2026-05-04 14:39:52 [ERROR   ] [scheduler] Stock scraping failed: No module named 'scraping'
+2026-05-04 14:39:52 [INFO    ] [scheduler] [3/5] Loading data for prediction...
+2026-05-04 14:39:52 [INFO    ] [scheduler] Loaded 176029 stock records
+2026-05-04 14:39:52 [INFO    ] [scheduler] [4/5] Running ML inference...
+2026-05-04 14:39:52 [ERROR   ] [scheduler] Prediction phase failed: invalid load key, '\x02'.
+2026-05-04 14:39:52 [INFO    ] [scheduler] [5/5] Exporting backup...
+2026-05-04 14:39:52 [INFO    ] [scheduler] Exported predictions to C:\Users\PC\Desktop\website\backend\data\predictions_backup_2026-05-04.csv
+2026-05-04 14:39:52 [INFO    ] [scheduler] ================================================================================
+2026-05-04 14:39:52 [INFO    ] [scheduler] Pipeline SUCCESS in 0.0s
+  Stocks scraped: 0
+  Predictions made: 0
+  Predictions saved: 0
+  Errors: 2
+  Warnings: 0
+2026-05-04 14:39:52 [INFO    ] [scheduler] ================================================================================
+2026-05-04 14:40:52 [INFO    ] [scheduler] Initializing APScheduler...
+2026-05-04 14:40:52 [INFO    ] [scheduler] APScheduler started. Pipeline scheduled daily at 16:00 US/Eastern
+2026-05-04 14:41:04 [INFO    ] [scheduler] Manual pipeline trigger requested
+2026-05-04 14:41:04 [INFO    ] [scheduler] ================================================================================
+2026-05-04 14:41:04 [INFO    ] [scheduler] Starting daily prediction pipeline at 2026-05-04 14:41:04
+2026-05-04 14:41:04 [INFO    ] [scheduler] ================================================================================
+2026-05-04 14:41:04 [INFO    ] [scheduler] [1/5] Initializing database...
+2026-05-04 14:41:04 [INFO    ] [scheduler] [2/5] Scraping new stock data...
+2026-05-04 14:41:04 [ERROR   ] [scheduler] Stock scraping failed: No module named 'scraping'
+2026-05-04 14:41:04 [INFO    ] [scheduler] [3/5] Loading data for prediction...
+2026-05-04 14:41:04 [INFO    ] [scheduler] Loaded 176029 stock records
+2026-05-04 14:41:04 [INFO    ] [scheduler] [4/5] Running ML inference...
+2026-05-04 14:41:04 [ERROR   ] [scheduler] Prediction phase failed: invalid load key, '\x02'.
+2026-05-04 14:41:04 [INFO    ] [scheduler] [5/5] Exporting backup...
+2026-05-04 14:41:04 [INFO    ] [scheduler] Exported predictions to C:\Users\PC\Desktop\website\backend\data\predictions_backup_2026-05-04.csv
+2026-05-04 14:41:04 [INFO    ] [scheduler] ================================================================================
+2026-05-04 14:41:04 [INFO    ] [scheduler] Pipeline SUCCESS in 0.0s
+  Stocks scraped: 0
+  Predictions made: 0
+  Predictions saved: 0
+  Errors: 2
+  Warnings: 0
+2026-05-04 14:41:04 [INFO    ] [scheduler] ================================================================================
+2026-05-04 14:42:47 [INFO    ] [scheduler] Initializing APScheduler...
+2026-05-04 14:42:47 [INFO    ] [scheduler] APScheduler started. Pipeline scheduled daily at 16:00 US/Eastern
+2026-05-04 14:42:47 [INFO    ] [scheduler] APScheduler stopped
+2026-05-04 14:43:02 [INFO    ] [scheduler] Manual pipeline trigger requested
+2026-05-04 14:43:02 [INFO    ] [scheduler] ================================================================================
+2026-05-04 14:43:02 [INFO    ] [scheduler] Starting daily prediction pipeline at 2026-05-04 14:43:02
+2026-05-04 14:43:02 [INFO    ] [scheduler] ================================================================================
+2026-05-04 14:43:02 [INFO    ] [scheduler] [1/5] Initializing database...
+2026-05-04 14:43:02 [INFO    ] [scheduler] [2/5] Scraping new stock data...
+2026-05-04 14:43:02 [ERROR   ] [scheduler] Stock scraping failed: No module named 'scraping'
+2026-05-04 14:43:02 [INFO    ] [scheduler] [3/5] Loading data for prediction...
+2026-05-04 14:43:02 [INFO    ] [scheduler] Loaded 176029 stock records
+2026-05-04 14:43:02 [INFO    ] [scheduler] [4/5] Running ML inference...
+2026-05-04 14:43:02 [ERROR   ] [scheduler] Prediction phase failed: invalid load key, '\x02'.
+2026-05-04 14:43:02 [INFO    ] [scheduler] [5/5] Exporting backup...
+2026-05-04 14:43:02 [INFO    ] [scheduler] Exported predictions to C:\Users\PC\Desktop\website\backend\data\predictions_backup_2026-05-04.csv
+2026-05-04 14:43:02 [INFO    ] [scheduler] ================================================================================
+2026-05-04 14:43:02 [INFO    ] [scheduler] Pipeline SUCCESS in 0.0s
+  Stocks scraped: 0
+  Predictions made: 0
+  Predictions saved: 0
+  Errors: 2
+  Warnings: 0
+2026-05-04 14:43:02 [INFO    ] [scheduler] ================================================================================
+2026-05-04 14:44:02 [INFO    ] [scheduler] Initializing APScheduler...
+2026-05-04 14:44:02 [INFO    ] [scheduler] APScheduler started. Pipeline scheduled daily at 16:00 US/Eastern
+2026-05-04 14:44:16 [INFO    ] [scheduler] Manual pipeline trigger requested
+2026-05-04 14:44:16 [INFO    ] [scheduler] ================================================================================
+2026-05-04 14:44:16 [INFO    ] [scheduler] Starting daily prediction pipeline at 2026-05-04 14:44:16
+2026-05-04 14:44:16 [INFO    ] [scheduler] ================================================================================
+2026-05-04 14:44:16 [INFO    ] [scheduler] [1/5] Initializing database...
+2026-05-04 14:44:16 [INFO    ] [scheduler] [2/5] Scraping new stock data...
+2026-05-04 14:44:16 [ERROR   ] [scheduler] Stock scraping failed: No module named 'yfinance'
+2026-05-04 14:44:16 [INFO    ] [scheduler] [3/5] Loading data for prediction...
+2026-05-04 14:44:16 [INFO    ] [scheduler] Loaded 176029 stock records
+2026-05-04 14:44:16 [INFO    ] [scheduler] [4/5] Running predictions...
+2026-05-04 14:44:20 [INFO    ] [scheduler] Saved 141 predictions
+2026-05-04 14:44:20 [INFO    ] [scheduler] [5/5] Exporting backup...
+2026-05-04 14:44:20 [INFO    ] [scheduler] Exported predictions to C:\Users\PC\Desktop\website\backend\data\predictions_backup_2026-05-04.csv
+2026-05-04 14:44:20 [INFO    ] [scheduler] ================================================================================
+2026-05-04 14:44:20 [INFO    ] [scheduler] Pipeline SUCCESS in 3.7s
+  Stocks scraped: 0
+  Predictions made: 141
+  Predictions saved: 141
+  Errors: 1
+  Warnings: 0
+2026-05-04 14:44:20 [INFO    ] [scheduler] ================================================================================
+2026-05-04 14:45:45 [INFO    ] [scheduler] Initializing APScheduler...
+2026-05-04 14:45:45 [INFO    ] [scheduler] APScheduler started. Pipeline scheduled daily at 16:00 US/Eastern
+2026-05-04 14:45:54 [INFO    ] [scheduler] Manual pipeline trigger requested
+2026-05-04 14:45:54 [INFO    ] [scheduler] ================================================================================
+2026-05-04 14:45:54 [INFO    ] [scheduler] Starting daily prediction pipeline at 2026-05-04 14:45:54
+2026-05-04 14:45:54 [INFO    ] [scheduler] ================================================================================
+2026-05-04 14:45:54 [INFO    ] [scheduler] [1/5] Initializing database...
+2026-05-04 14:45:54 [INFO    ] [scheduler] [2/5] Scraping new stock data...
+2026-05-04 14:49:29 [INFO    ] [scheduler] [3/5] Loading data for prediction...
+2026-05-04 14:49:29 [INFO    ] [scheduler] Loaded 176029 stock records
+2026-05-04 14:49:29 [INFO    ] [scheduler] [4/5] Running predictions...
+2026-05-04 14:49:33 [INFO    ] [scheduler] Saved 141 predictions
+2026-05-04 14:49:33 [INFO    ] [scheduler] [5/5] Exporting backup...
+2026-05-04 14:49:33 [INFO    ] [scheduler] Exported predictions to C:\Users\PC\Desktop\website\backend\data\predictions_backup_2026-05-04.csv
+2026-05-04 14:49:33 [INFO    ] [scheduler] ================================================================================
+2026-05-04 14:49:33 [INFO    ] [scheduler] Pipeline SUCCESS in 219.5s
+  Stocks scraped: 0
+  Predictions made: 141
+  Predictions saved: 141
+  Errors: 0
+  Warnings: 0
+2026-05-04 14:49:33 [INFO    ] [scheduler] ================================================================================
+2026-05-04 14:50:51 [INFO    ] [scheduler] Initializing APScheduler...
+2026-05-04 14:50:51 [INFO    ] [scheduler] APScheduler started. Pipeline scheduled daily at 16:00 US/Eastern
+2026-05-04 14:52:41 [INFO    ] [scheduler] Manual pipeline trigger requested
+2026-05-04 14:52:41 [INFO    ] [scheduler] ================================================================================
+2026-05-04 14:52:41 [INFO    ] [scheduler] Starting daily prediction pipeline at 2026-05-04 14:52:41
+2026-05-04 14:52:41 [INFO    ] [scheduler] ================================================================================
+2026-05-04 14:52:41 [INFO    ] [scheduler] [1/5] Initializing database...
+2026-05-04 14:52:41 [INFO    ] [scheduler] [2/5] Scraping new stock data...
+2026-05-04 14:55:30 [INFO    ] [scheduler] [3/5] Loading data for prediction...
+2026-05-04 14:55:30 [INFO    ] [scheduler] Loaded 176029 stock records
+2026-05-04 14:55:30 [INFO    ] [scheduler] [4/5] Running predictions...
+2026-05-04 14:55:37 [INFO    ] [scheduler] Saved 141 predictions
+2026-05-04 14:55:37 [INFO    ] [scheduler] [5/5] Exporting backup...
+2026-05-04 14:55:37 [INFO    ] [scheduler] Exported predictions to C:\Users\PC\Desktop\website\backend\data\predictions_backup_2026-05-04.csv
+2026-05-04 14:55:37 [INFO    ] [scheduler] ================================================================================
+2026-05-04 14:55:37 [INFO    ] [scheduler] Pipeline SUCCESS in 176.7s
+  Stocks scraped: 0
+  Predictions made: 141
+  Predictions saved: 141
+  Errors: 0
+  Warnings: 0
+2026-05-04 14:55:37 [INFO    ] [scheduler] ================================================================================
