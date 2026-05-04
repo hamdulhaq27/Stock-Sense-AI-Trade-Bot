@@ -1,6 +1,8 @@
 "use client";
+
 export const dynamic = "force-dynamic";
-import { createContext, useState, useEffect } from "react";
+
+import { createContext, useState, useEffect, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import TopBar from "@/components/dashboard/TopBar";
 
@@ -9,7 +11,7 @@ export const SymbolContext = createContext({
   setActiveSymbol: (symbol: string) => {},
 });
 
-export default function DashboardLayout({ children }: { children: React.ReactNode }) {
+function DashboardLayoutInner({ children }: { children: React.ReactNode }) {
   const searchParams = useSearchParams();
   const [activeSymbol, setActiveSymbol] = useState("AAPL");
 
@@ -20,11 +22,19 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
 
   return (
     <SymbolContext.Provider value={{ activeSymbol, setActiveSymbol }}>
-      <TopBar 
-        activeSymbol={activeSymbol} 
-        onSymbolChange={setActiveSymbol} 
+      <TopBar
+        activeSymbol={activeSymbol}
+        onSymbolChange={setActiveSymbol}
       />
       {children}
     </SymbolContext.Provider>
+  );
+}
+
+export default function DashboardLayout({ children }: { children: React.ReactNode }) {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <DashboardLayoutInner>{children}</DashboardLayoutInner>
+    </Suspense>
   );
 }
