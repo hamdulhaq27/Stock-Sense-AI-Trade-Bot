@@ -90,14 +90,12 @@ app.add_middleware(
     allow_origins=[
         "http://localhost:3000",
         "http://localhost:3001",
-        "https://*.vercel.app",
-        "https://stocksense-ai-trader.vercel.app/", 
+        "https://stocksense-ai-trader.vercel.app",  # ✅ no trailing slash
     ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
-
 # ---------------------------------------------------------------------------
 # Request timing middleware
 # ---------------------------------------------------------------------------
