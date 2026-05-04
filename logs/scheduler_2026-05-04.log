@@ -160,3 +160,5 @@
   Errors: 0
   Warnings: 0
 2026-05-04 14:55:37 [INFO    ] [scheduler] ================================================================================
+2026-05-04 16:29:45 [INFO    ] [scheduler] Initializing APScheduler...
+2026-05-04 16:29:45 [INFO    ] [scheduler] APScheduler started. Pipeline scheduled daily at 16:00 US/Eastern
