@@ -33,6 +33,48 @@ class PredictionOut(dict):
     pass
 
 
+@router.post("/trigger-manual", summary="Manually trigger the pipeline (testing)")
+async def trigger_manual_pipeline() -> dict:
+    """
+    Manually trigger the daily prediction pipeline.
+    Useful for testing. Requires admin access in production.
+    """
+    logger.info("Manual pipeline trigger requested via API")
+
+    result = trigger_manual_run()
+    return result
+
+
+@router.get("/stats/summary", summary="Get prediction statistics")
+async def get_prediction_summary() -> dict:
+    """Get summary statistics on predictions."""
+    from data.predictions_db import get_prediction_count
+
+    total_predictions = get_prediction_count()
+    latest_predictions = get_latest_predictions_all()
+
+    up_count = sum(1 for p in latest_predictions if p["direction"] == "UP")
+    down_count = sum(1 for p in latest_predictions if p["direction"] == "DOWN")
+    stable_count = sum(1 for p in latest_predictions if p["direction"] == "STABLE")
+
+    avg_confidence = (
+        sum(p["confidence"] for p in latest_predictions) / len(latest_predictions)
+        if latest_predictions
+        else 0
+    )
+
+    return {
+        "total_predictions_in_db": total_predictions,
+        "latest_predictions_count": len(latest_predictions),
+        "directions": {
+            "UP": up_count,
+            "DOWN": down_count,
+            "STABLE": stable_count,
+        },
+        "average_confidence": round(avg_confidence, 3),
+    }
+
+
 @router.get("/{symbol}", summary="Get latest ML prediction for a stock")
 async def get_latest_prediction_endpoint(symbol: str) -> dict:
     """
@@ -152,46 +194,4 @@ async def get_predictions_for_date(date: str) -> dict:
             }
             for p in predictions
         ],
-    }
-
-
-@router.post("/trigger-manual", summary="Manually trigger the pipeline (testing)")
-async def trigger_manual_pipeline() -> dict:
-    """
-    Manually trigger the daily prediction pipeline.
-    Useful for testing. Requires admin access in production.
-    """
-    logger.info("Manual pipeline trigger requested via API")
-
-    result = trigger_manual_run()
-    return result
-
-
-@router.get("/stats/summary", summary="Get prediction statistics")
-async def get_prediction_summary() -> dict:
-    """Get summary statistics on predictions."""
-    from data.predictions_db import get_prediction_count
-
-    total_predictions = get_prediction_count()
-    latest_predictions = get_latest_predictions_all()
-
-    up_count = sum(1 for p in latest_predictions if p["direction"] == "UP")
-    down_count = sum(1 for p in latest_predictions if p["direction"] == "DOWN")
-    stable_count = sum(1 for p in latest_predictions if p["direction"] == "STABLE")
-
-    avg_confidence = (
-        sum(p["confidence"] for p in latest_predictions) / len(latest_predictions)
-        if latest_predictions
-        else 0
-    )
-
-    return {
-        "total_predictions_in_db": total_predictions,
-        "latest_predictions_count": len(latest_predictions),
-        "directions": {
-            "UP": up_count,
-            "DOWN": down_count,
-            "STABLE": stable_count,
-        },
-        "average_confidence": round(avg_confidence, 3),
     }
