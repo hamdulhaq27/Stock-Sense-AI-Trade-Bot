@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { ChevronLeft, ChevronRight, TrendingUp, TrendingDown } from "lucide-react";
+import { API_URL } from "@/lib/api";
 
 interface TickerData {
   symbol: string;
@@ -32,7 +33,7 @@ export default function TickersTable() {
   const fetchAllTickers = async () => {
     try {
       setLoading(true);
-      const symbolsRes = await fetch("http://localhost:8000/stocks/");
+      const symbolsRes = await fetch(`${API_URL}/stocks/`);
       if (!symbolsRes.ok) throw new Error("Failed to fetch symbols");
 
       const { symbols } = await symbolsRes.json();
@@ -40,7 +41,7 @@ export default function TickersTable() {
       const tickerData: TickerData[] = [];
       for (const symbol of symbols) {
         try {
-          const res = await fetch(`http://localhost:8000/stocks/${symbol}`);
+          const res = await fetch(`${API_URL}/stocks/${symbol}`);
           if (res.ok) {
             const data = await res.json();
             tickerData.push(data);
