@@ -33,7 +33,7 @@ class PredictionOut(dict):
     pass
 
 
-@router.post("/trigger-manual", summary="Manually trigger the pipeline (testing)")
+@router.get("/trigger-manual", summary="Manually trigger the pipeline (testing)")
 async def trigger_manual_pipeline() -> dict:
     """
     Manually trigger the daily prediction pipeline.
